@@ -19,9 +19,24 @@ background: linear-gradient(90deg, rgba(29,65,204,1) 0%, rgba(30,29,179,1) 23%, 
                 <span asp-validation-for="UserName" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="UserEmail" class="control-label"></label>
                 <input asp-for="UserEmail" class="form-control" />
                 <span asp-validation-for="UserEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Password" class="control-label"></label>
@@ -34,23 +49,9 @@ background: linear-gradient(90deg, rgba(29,65,204,1) 0%, rgba(30,29,179,1) 23%, 
                 <span asp-validation-for="CPassword" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FullName" class="control-label"></label>
-                <input asp-for="FullName" class="form-control" />
-                <span asp-validation-for="FullName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Age" class="control-label"></label>
-                <input asp-for="Age" class="form-control" />
-                <span asp-validation-for="Age" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="UserTypeId" class="control-label"></label>
-                <select asp-for="UserTypeId" class ="form-control" asp-items="ViewBag.UserTypeId"></select>
+              @*  <label asp-for="UserTypeId" class="control-label"></label>*@
+                @*<select asp-for="UserTypeId" class ="form-control" asp-items="ViewBag.UserTypeId"></select>*@
+                <input asp-for="UserTypeId" class="form-control" type="hidden" value="1">
             </div>
             <br>
             <div class="form-group">

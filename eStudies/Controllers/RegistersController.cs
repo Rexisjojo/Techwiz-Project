@@ -25,6 +25,12 @@ namespace eStudies.Controllers
             var eStudiesDbContext = _context.Registers.Include(r => r.UserType);
             return View(await eStudiesDbContext.ToListAsync());
         }
+        public async Task<IActionResult> Registration()
+        {
+            //var eStudiesDbContext = _context.Registers.Include(r => r.UserType);
+            //return View(await eStudiesDbContext.ToListAsync());
+            return View();
+        }
 
         // GET: Registers/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -63,8 +69,8 @@ namespace eStudies.Controllers
         [HttpGet]
         public IActionResult CreateParent()
         {
-            ViewData["UserTypeId"] = new SelectList(_context.UserTypes, "UserTypeId", "TypeName");
-            return View();
+            //ViewData["UserTypeId"] = new SelectList(_context.UserTypes, "UserTypeId", "TypeName");
+             return View();
         }
 
         // POST: Registers/Create
