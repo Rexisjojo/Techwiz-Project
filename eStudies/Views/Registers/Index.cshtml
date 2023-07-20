@@ -1,0 +1,88 @@
+﻿@model IEnumerable<eStudies.Models.Register>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create Student</a>
+    <br>
+    <a asp-action="CreateTeacher">Create Teacher</a>
+    <br>
+    <a asp-action="CreateParent">Create Parent</a>
+</p>
+<table class="table table-hover text-center">
+    <thead class="table-dark ">
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.UserEmail)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.CPassword)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.UserType)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                    @if (item.Age == 0)
+                    {
+                       <p>NA</p>
+                    }else
+                    {
+                    @Html.DisplayFor(modelItem => item.Age)
+                    }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserType.TypeName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RegisterId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RegisterId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RegisterId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
