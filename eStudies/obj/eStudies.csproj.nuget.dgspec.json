@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\eStudies\\eStudies\\eStudies.csproj": {}
+    "D:\\repos\\eStudies\\Techwiz-Project\\eStudies\\eStudies.csproj": {}
   },
   "projects": {
-    "D:\\repos\\eStudies\\eStudies\\eStudies.csproj": {
+    "D:\\repos\\eStudies\\Techwiz-Project\\eStudies\\eStudies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\eStudies\\eStudies\\eStudies.csproj",
+        "projectUniqueName": "D:\\repos\\eStudies\\Techwiz-Project\\eStudies\\eStudies.csproj",
         "projectName": "eStudies",
-        "projectPath": "D:\\repos\\eStudies\\eStudies\\eStudies.csproj",
+        "projectPath": "D:\\repos\\eStudies\\Techwiz-Project\\eStudies\\eStudies.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\eStudies\\eStudies\\obj\\",
+        "outputPath": "D:\\repos\\eStudies\\Techwiz-Project\\eStudies\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

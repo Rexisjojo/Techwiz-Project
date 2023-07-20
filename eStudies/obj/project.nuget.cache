@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z8aSDw+Dk4Tf3UPkvvuZy0o71zBEBAWVru/yZ3y7o4jy1Wx4TSsYECtlXbNuIZCQMThwyzfPacvRVf+n4WMavw==",
+  "dgSpecHash": "XJkIcIGeHQSXfxYlYsTimh2QNFMGZkwq0cmpvIpfLwFX+5yryOHLpAyeen6RIcWpptbOePjAACHrasu0jDYbMw==",
   "success": true,
-  "projectFilePath": "D:\\repos\\eStudies\\eStudies\\eStudies.csproj",
+  "projectFilePath": "D:\\repos\\eStudies\\Techwiz-Project\\eStudies\\eStudies.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
