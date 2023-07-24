@@ -13,10 +13,12 @@ namespace eStudies.Controllers
     public class RegistersController : Controller
     {
         private readonly eStudiesDbContext _context;
+        readonly IEmailSender _emailsender;
 
-        public RegistersController(eStudiesDbContext context)
+        public RegistersController(eStudiesDbContext context, IEmailSender emailsender)
         {
             _context = context;
+            _emailsender = emailsender;
         }
 
         // GET: Registers
@@ -93,6 +95,7 @@ namespace eStudies.Controllers
 
                 _context.Add(register);
                 await _context.SaveChangesAsync();
+                await _emailsender.SendEmailAsync(register.UserEmail, "Welcome Mail From EStudies", "Welcome To Our EStudies Website");
                 return RedirectToAction(nameof(Index));
             }
             catch

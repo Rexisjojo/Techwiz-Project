@@ -16,5 +16,8 @@ namespace eStudies.Data
 
         public DbSet<UserType> UserTypes { get; set; }
         public DbSet<Register> Registers { get; set; }
+        public DbSet<Marks> Marks { get; set; }
+        public DbSet<SResources> Resources { get; set; }
+        public DbSet<AcademicProgress> AcademicProgress { get; set; }
     }
 }

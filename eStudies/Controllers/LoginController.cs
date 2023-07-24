@@ -17,7 +17,7 @@ namespace eStudies.Controllers
         public IActionResult ULogin()
         {
             return View();
-        }
+          }
 
         //Post
 
